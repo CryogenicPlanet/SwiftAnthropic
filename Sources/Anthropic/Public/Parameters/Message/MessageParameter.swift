@@ -258,11 +258,11 @@ public struct MessageParameter: Encodable {
       public let displayNumber: Int?
 
       public init(
-         type: String,
          name: String,
          description: String? = nil,
          inputSchema: JSONSchema? = nil,
          cacheControl: CacheControl? = nil,
+         type: String?,
          displayWidthPx: Int? = nil,
          displayHeightPx: Int? = nil,
          displayNumber: Int? = nil
