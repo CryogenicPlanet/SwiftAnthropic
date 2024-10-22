@@ -262,13 +262,13 @@ public struct MessageParameter: Encodable {
          description: String? = nil,
          inputSchema: JSONSchema? = nil,
          cacheControl: CacheControl? = nil,
-         type: String?,
+         type: String? = nil,
          displayWidthPx: Int? = nil,
          displayHeightPx: Int? = nil,
          displayNumber: Int? = nil
       ) {
-         self.type = type
          self.name = name
+         self.type = type
          self.description = description
          self.inputSchema = inputSchema
          self.cacheControl = cacheControl
@@ -432,15 +432,15 @@ public struct MessageParameter: Encodable {
       public init(
          name: String,
          description: String? = nil,
-         type: String?,
+         type: String? = nil,
          inputSchema: JSONSchema? = nil,
          cacheControl: CacheControl? = nil,
          displayWidthPx: Int? = nil,
          displayHeightPx: Int? = nil,
          displayNumber: Int? = nil
       ) {
-         self.type = type
          self.name = name
+         self.type = type
          self.description = description
          self.inputSchema = inputSchema
          self.cacheControl = cacheControl
